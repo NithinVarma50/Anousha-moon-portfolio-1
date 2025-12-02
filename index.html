@@ -509,7 +509,7 @@
 
                 <div className="max-w-7xl mx-auto mt-20">
                     <h2 className="text-3xl font-serif text-center mb-12 text-stone-600">Speaking Moments</h2>
-                    <div className="grid md:grid-cols-3 gap-6">
+                    <div className="grid md:grid-cols-4 gap-4">
                         <div className="relative aspect-[4/3] overflow-hidden rounded-sm shadow-lg group">
                             <img src="images/anousha-tedx-1.jpg" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="TEDx Speaking" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -520,6 +520,10 @@
                         </div>
                         <div className="relative aspect-[4/3] overflow-hidden rounded-sm shadow-lg group">
                             <img src="images/anousha-tedx-3.jpg" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="TEDx Stage" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div className="relative aspect-[4/3] overflow-hidden rounded-sm shadow-lg group">
+                            <img src="images/anousha-speaking-gif.gif" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Speaking Animation" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         </div>
                     </div>
@@ -560,7 +564,7 @@
                     ].map((v, i) => (
                         <div key={i} className="group border-r border-b border-stone-200 bg-white hover:bg-stone-50 transition-colors relative overflow-hidden h-[500px] flex flex-col">
                             <div className="h-1/2 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all duration-700">
-                                <img src={v.img} className="w-full h-full object-cover scale-90 transition-transform duration-700 group-hover:scale-105" alt={v.title} />
+                                <img src={v.img} className="w-full h-full object-cover scale-75 translate-y-4 transition-transform duration-700 group-hover:scale-90" alt={v.title} />
                             </div>
                             <div className="p-8 flex flex-col h-1/2 justify-between">
                                 <div>
