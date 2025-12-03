@@ -242,13 +242,23 @@
                             </motion.div>
                             
                             {/* Mobile Images */}
-                            <div className="lg:hidden flex flex-col items-center justify-center space-y-8 mt-8">
-                                <div className="w-full max-w-md h-64 bg-stone-200 overflow-hidden shadow-lg rounded-lg">
+                            <div className="lg:hidden flex flex-col items-center justify-center space-y-6 mt-8">
+                                <motion.div
+                                    initial={{ opacity: 0, y: 30 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, delay: 0.2 }}
+                                    className="w-full max-w-md h-64 bg-stone-200 overflow-hidden shadow-lg rounded-lg"
+                                >
                                     <img src="images/anousha-tedx-3.jpg" className="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-1000 grayscale hover:grayscale-0" alt="TEDx Speaking" />
-                                </div>
-                                <div className="w-40 h-40 bg-stone-300 overflow-hidden shadow-xl rounded-full border-4 border-alabaster">
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 30 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, delay: 0.4 }}
+                                    className="w-full max-w-md h-48 bg-stone-300 overflow-hidden shadow-xl rounded-lg border-4 border-alabaster"
+                                >
                                     <img src="images/anousha-portrait-1.jfif" className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" alt="Anousha Portrait" />
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </section>
